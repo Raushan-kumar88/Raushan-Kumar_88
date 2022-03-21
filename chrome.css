@@ -1,0 +1,287 @@
+/* BASIC STYLES */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    background-image: url("https://images.unsplash.com/photo-1543187018-21e461e7538e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTB8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80");
+    background-repeat: no-repeat;
+    background-size: 100% 750px
+  }
+
+  header {
+    width: 100%;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  /* NAV BAR */
+  .nav_bar {
+    float: right;
+  }
+  
+  .nav_bar li {
+    display: inline-block;
+    padding: 8px;
+  }
+  
+  .nav_bar #sign_in {
+    background: #4887ef; 
+    margin-right: 25px;
+    padding: 7px 15px;
+    border-radius: 3px; 
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    color: #404040;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  li.nav-links a:hover {
+    text-decoration: underline;
+  }
+  
+  #sign_in:hover { 
+    box-shadow: 1px 1px 5px #999;
+  }
+  
+  #sign_in {
+    color: #fff;
+  }
+  
+  /* GOOGLE AREA */
+  .google #google_logo {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    clear: both;
+    padding-top: 70px;
+    padding-bottom: 20px;
+  }
+  
+  .form {
+    text-align: center;
+    /* margin-top: 30px; */
+  }
+  .form .demo{
+      background: white;
+      width: 605px;
+      margin-left: 30%;
+      border-radius: 50px;
+      box-shadow: 2px 2px 2px  rgb(182, 180, 180);
+  }
+  #form-search { 
+    width: 520px;
+    background: none;
+    border: none;
+    height: 45px;
+    line-height: 32px;
+    padding: 20px 10px;
+    border-radius: 50px;
+    /* border: 1px solid rgb(150, 145, 145); */
+    outline: none;
+  }
+
+  
+  .form #form-search {
+    padding: 0 8px;
+  }
+  
+  /* #form-search:hover {
+    border-color: #e4e4e4;
+    padding-top: 0;
+  } */
+  
+  .buttons {
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 240px;
+  }
+  .buttons .same{
+      padding: 7px;
+      border-radius: 5px;
+      outline: none;
+      border: none;
+      margin:0px 5px;
+      cursor: pointer;
+  }
+  .buttons .same:hover{
+      outline: 1px solid black;
+  }
+  #SIvCob{
+    color: white;
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  #SIvCob a{
+      color: blue;
+      font-size: 14px;
+      margin-right: 4px;
+  }
+
+  .fot{
+    color: #666666;
+    margin: 8px 10px;
+  }
+  .fot:hover{
+    text-decoration: underline;
+  }
+
+  div ul li{
+    display: inline;
+    color: #666666;
+    font-size: 14px;
+    padding: 13px;
+    margin-right: 70%;
+  }
+  /* FOOTER */
+
+  footer  {
+    background: #f2f2f2;
+    border-top: solid 2px #e4e4e4;
+  /*   position: fixed; */
+    bottom: 0;
+    padding-bottom: 0;
+    width: 100%;
+    
+  }
+  
+  footer ul li {
+    display: inline;
+    color: #666666;
+    font-size: 14px;
+    padding: 13px;
+  }
+  
+  footer ul {
+    float: left;
+    padding: 1px;
+  }
+  
+  footer ul a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-right {
+    float: right;
+  }
+  
+  /* MEDIA QUERIES */
+/*   
+  @media screen and (max-width: 400px) {
+   
+   li.nav-links a {
+      display: none;
+    }
+    
+   #google_logo {
+     padding: 0;
+     
+   }
+   #google_logo .im{
+    width: 50px;
+    height: 30px;
+   }
+    
+   .buttons {
+     display: none;
+   }
+    
+   #form-search {
+     width: 80%;
+  
+   }
+    
+   footer {
+     bottom: 0;
+   }
+    
+   footer ul {
+     float: none;
+     padding-bottom: 2px;
+      
+   }
+    
+   .footer-left {
+     text-align: center;
+     margin: auto; 
+     padding-top: 10px;
+      
+   }
+    
+   .footer-right {
+     float: none;
+     text-align: center;
+     
+   }
+  }
+  
+  @media screen and (max-width: 565px) {
+   
+    li.nav-links a {
+      display: none;
+    }
+    
+    
+   #google_logo {
+     padding: 0;
+    
+   }
+    
+   .buttons {
+     display: none;
+   }
+    
+   #form-search {
+     width: 80%;
+  
+   }
+    
+   footer {
+  /*    bottom: 0;
+     postion: absolute; */
+     /* position:absolute;
+     bottom:0;
+     width:100%;
+     height:60px;
+   } */
+/*     
+   footer ul {
+     float: none;
+     padding-bottom: 2px;
+      
+   }
+    
+   .footer-left {
+     text-align: center;
+     margin: auto; 
+     padding-top: 10px;
+      
+   }
+    
+   .footer-right {
+     float: none;
+     text-align: center;
+     
+   }
+  } */
+   */
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
